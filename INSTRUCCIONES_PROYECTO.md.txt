@@ -1,0 +1,41 @@
+Resumen Ejecutivo: Proyecto RUWEN
+RUWEN es una agencia de servicios digitales integrales con ADN patagónico, enfocada en potenciar ideas, marcas y, especialmente, alojamientos turísticos en la zona de Villa Meliquina y San Martín de los Andes.
+
+1. Objetivo del Proyecto
+Posicionar a RUWEN como el aliado tecnológico local que digitaliza la hospitalidad y los emprendimientos regionales, combinando tecnología de vanguardia (automatización, sincronización) con una estética orgánica y premium.
+
+2. Alcance (Scope)
+Identidad de Marca: Implementación de branding en web y redes sociales.
+
+Desarrollo Web: Creación de sitios estáticos de alto rendimiento con motores de reserva y sincronización de calendarios.
+
+Automatización: Implementación de agentes inteligentes para atención al cliente y gestión de servicios.
+
+Red de Experiencias: Creación de un "Concierge Digital" que integre servicios locales (kayaks, traslados, masajes).
+
+Producción Audiovisual: Generación de contenido visual de alta montaña para potenciar la visibilidad de los clientes.
+
+3. Identidad Visual (Branding)
+Logo: Silueta de montaña en Rojo RUWEN sobre texto "RUWEN" en Azul Lago Profundo (Versión Light Mode).
+
+Paleta de Colores:
+
+#1B3039 AZUL LAGO PROFUNDO: Base para fondos oscuros, TITULOS y secciones tecnológicas.
+
+#4A4C51 GRIS BASALTO: Textos sobre fondo claro.
+
+#F8FAFC BLANCO GLACIAR: Fondos limpios o textos sobre contraste oscuro.
+
+#DB3029 ROJO RUWEN: Acento Principal para Botones, CTAs, Iconos pequeños y subrayados (Referencia visual en el logo y muestras).
+Tipografía:
+
+Títulos: Sora Bold (Geométrica y moderna).
+
+Cuerpo: Inter Regular (Limpia y funcional).
+
+4. Stack Tecnológico
+Editor: Antigravity Agent (Review-driven development).
+
+Hosting: Netlify (Despliegue estático y dominio personalizado).
+
+Base de Diseño: Plantillas HTML5 UP (estilos Spectral o Hyperspace).

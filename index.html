@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUWEN | Especialistas en Soluciones Digitales y Automatización</title>
+    <meta name="description"
+        content="RUWEN es un especialista en soluciones digitales y automatización con alcance en toda Argentina. Desarrollo web, growth marketing, automatización con IA y hospitalidad digital.">
+    <meta name="keywords"
+        content="Ruwen, Agencia Digital, Automatización, IA, Desarrollo Web, Marketing Digital, N8N, Argentina, Patagonia, Hospitality Tech">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+       HEADER FLOTANTE (Desktop)
+  ====================================================== -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#inicio" class="logo">
+                <img src="images/LOGO CONTRASTE sin fondo.png" alt="RUWEN Logo" class="logo-img">
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#agencia" class="nav-link">Agencia</a></li>
+                    <li><a href="#hospitalidad" class="nav-link">Hospitalidad</a></li>
+                    <li><a href="#eventos" class="nav-link">Experiencias</a></li>
+                    <li><a href="#alianzas" class="nav-link">Networking</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/5492944817787" target="_blank" class="btn btn-primary cta-contact">Contactar</a>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Cerrar menú">✕</button>
+        <ul>
+            <li><a href="#agencia">Agencia</a></li>
+            <li><a href="#hospitalidad">Hospitalidad</a></li>
+            <li><a href="#eventos">Experiencias</a></li>
+            <li><a href="#alianzas">Networking</a></li>
+            <li><a href="https://wa.me/5492944817787" target="_blank" class="btn btn-primary"
+                    style="margin-top:16px;display:inline-block;padding:15px;">Contactar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- =====================================================
+         SECCIÓN 1: HERO VIDEO SLIDER
+    ====================================================== -->
+        <section id="inicio" class="hero-section">
+
+            <!-- Capas de video (apiladas con opacity) -->
+            <div class="hero-video-stack">
+
+                <!-- Slide 1: Vision -->
+                <div class="hero-video-layer active" id="hero-layer-0">
+                    <video id="hero-vid-0" src="hero/Video 1.mp4" data-desktop-src="hero/Video 1.mp4"
+                        data-mobile-src="hero/vertical/1.mp4" muted playsinline preload="auto"></video>
+                </div>
+
+                <!-- Slide 2: Tech -->
+                <div class="hero-video-layer" id="hero-layer-1">
+                    <video id="hero-vid-1" src="hero/Video 3.mp4" data-desktop-src="hero/Video 3.mp4"
+                        data-mobile-src="hero/vertical/3.mp4" muted playsinline preload="auto"></video>
+                </div>
+
+                <!-- Slide 3: Experience -->
+                <div class="hero-video-layer" id="hero-layer-2">
+                    <video id="hero-vid-2" src="hero/Video 4.mp4" data-desktop-src="hero/Video 4.mp4"
+                        data-mobile-src="hero/vertical/4.mp4" muted playsinline preload="auto"></video>
+                </div>
+
+                <!-- Slide 4: Growth -->
+                <div class="hero-video-layer" id="hero-layer-3">
+                    <video id="hero-vid-3" src="hero/Video 6.mp4" data-desktop-src="hero/Video 6.mp4"
+                        data-mobile-src="hero/vertical/6.mp4" muted playsinline preload="auto"></video>
+                </div>
+
+                <!-- Overlay de oscurecimiento -->
+                <div class="hero-overlay"></div>
+
+                <!-- Overlay de texto (visible en freeze) -->
+                <div class="hero-text-overlay" id="hero-text-overlay">
+                    <div class="hero-slide-text" id="hero-slide-0" data-slide="0">
+                        <p class="hero-eyebrow">Visión</p>
+                        <h1 class="hero-title">CONSTRUIMOS<br>PRESENCIA DIGITAL</h1>
+                        <p class="hero-body">Ecosistemas digitales de alto impacto para marcas que buscan escalar.</p>
+                        <a href="#nosotros" class="btn btn-primary">Conocé nuestro enfoque</a>
+                    </div>
+                    <div class="hero-slide-text hidden" id="hero-slide-1" data-slide="1">
+                        <p class="hero-eyebrow">Tech</p>
+                        <h1 class="hero-title">AUTOMATIZACIÓN<br>& INTELIGENCIA</h1>
+                        <p class="hero-body">Implementamos agentes de IA y workflows para que tu negocio opere 24/7 sin
+                            fricciones.</p>
+                        <a href="#tech-stack" class="btn btn-primary">Ver Tech Stack</a>
+                    </div>
+                    <div class="hero-slide-text hidden" id="hero-slide-2" data-slide="2">
+                        <p class="hero-eyebrow">Experience</p>
+                        <h1 class="hero-title">HOSPITALIDAD<br>SENSORIAL & DIGITAL</h1>
+                        <p class="hero-body">Tu alojamiento, potenciado con tecnología, marketing y experiencias de
+                            marca únicas.</p>
+                        <a href="#hospitalidad" class="btn btn-primary">Ver soluciones</a>
+                    </div>
+                    <div class="hero-slide-text hidden" id="hero-slide-3" data-slide="3">
+                        <p class="hero-eyebrow">Growth</p>
+                        <h1 class="hero-title">ESCALAMOS<br>TU NEGOCIO</h1>
+                        <p class="hero-body">Estrategias de pauta, SEO y crecimiento sostenido orientadas a resultados
+                            reales.</p>
+                        <a href="#marketing" class="btn btn-primary">Crecer con RUWEN</a>
+                    </div>
+                </div>
+
+            </div><!-- /.hero-video-stack -->
+
+            <!-- Dots de navegación inferiores -->
+            <div class="hero-dots" id="hero-dots">
+                <button class="hero-dot active" data-index="0">
+                    <span class="dot-indicator"></span>
+                    <span class="dot-label">Visión</span>
+                </button>
+                <button class="hero-dot" data-index="1">
+                    <span class="dot-indicator"></span>
+                    <span class="dot-label">Tech</span>
+                </button>
+                <button class="hero-dot" data-index="2">
+                    <span class="dot-indicator"></span>
+                    <span class="dot-label">Experience</span>
+                </button>
+                <button class="hero-dot" data-index="3">
+                    <span class="dot-indicator"></span>
+                    <span class="dot-label">Growth</span>
+                </button>
+            </div>
+
+        </section><!-- /#inicio -->
+
+        <!-- =====================================================
+         SECCIÓN 2: AGENCY — Tech & Growth (4 tarjetas)
+    ====================================================== -->
+        <section id="agencia" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="eyebrow-label">Nuestro enfoque</p>
+                    <h2 class="section-title">Soluciones End-to-End</h2>
+                    <p class="section-subtitle">Cubrimos todo el ecosistema digital de tu marca, desde la idea hasta el
+                        resultado.</p>
+                </div>
+                <div class="agency-grid">
+
+                    <!-- Card 1 -->
+                    <div class="agency-card" id="ecommerce">
+                        <div class="agency-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                                <path d="M7 8h.01M11 8h6M7 12h10" />
+                            </svg>
+                        </div>
+                        <h3>Desarrollo Web & E-commerce</h3>
+                        <p>Creamos sitios y tiendas online rápidos, responsivos y orientados a la conversión. Desde
+                            landing pages de alto impacto hasta plataformas de e-commerce completas con pasarela de
+                            pago, gestión de inventario y catálogos optimizados para vender.</p>
+                        <ul class="card-feature-list">
+                            <li>Sitios en WordPress, HTML5 o frameworks modernos</li>
+                            <li>Tiendas WooCommerce y Shopify</li>
+                            <li>Optimización de velocidad y Core Web Vitals</li>
+                            <li>Hosting y mantenimiento incluido</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="agency-card">
+                        <div class="agency-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                                <circle cx="12" cy="12" r="8" stroke-dasharray="2 3" />
+                            </svg>
+                        </div>
+                        <h3>Automatización & IA</h3>
+                        <p>Usamos Tecnologías de ultima generación para la gestión de agentes de inteligencia artificial
+                            para conectar tus herramientas, eliminar tareas repetitivas y hacer que tu operación
+                            funcione 24/7 sin intervención manual. Ahorrás tiempo, reducís errores y escalás sin
+                            contratar más.</p>
+                        <ul class="card-feature-list">
+                            <li>Workflows automatizados con N8N y Zapier</li>
+                            <li>Agentes de IA para atención y gestión</li>
+                            <li>Integración CRM, WhatsApp y email</li>
+                            <li>Automatización de reportes y seguimientos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="agency-card" id="marketing">
+                        <div class="agency-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                <polyline points="16 7 22 7 22 13" />
+                            </svg>
+                        </div>
+                        <h3>Growth Marketing & Ads</h3>
+                        <p>Diseñamos estrategias de pauta publicitaria en Meta, Google y TikTok orientadas al ROAS real
+                            y la escalabilidad sostenida. No quemamos presupuesto: optimizamos cada peso para que tus
+                            campañas generen resultados medibles y crecimiento constante.</p>
+                        <ul class="card-feature-list">
+                            <li>Campañas Meta Ads y Google Ads</li>
+                            <li>Estrategia de embudo y retargeting</li>
+                            <li>Reportes de rendimiento y ROAS</li>
+                            <li>A/B testing y optimización continua</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="agency-card">
+                        <div class="agency-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <h3>Branding & Content Strategy</h3>
+                        <p>Construimos la identidad visual y narrativa de tu marca: desde el logo y la paleta de colores
+                            hasta el plan de contenidos mensual. Creamos piezas que posicionan, conectan y venden,
+                            combinando copywriting persuasivo con SEO orgánico de largo plazo.</p>
+                        <ul class="card-feature-list">
+                            <li>Identidad visual y manual de marca</li>
+                            <li>Copywriting y redacción persuasiva</li>
+                            <li>SEO on-page y estrategia de contenidos</li>
+                            <li>Gestión de redes sociales y comunidades</li>
+                        </ul>
+                    </div>
+
+                </div><!-- /.agency-grid -->
+
+                <!-- CTA -->
+                <div class="section-cta text-center">
+                    <a href="https://wa.me/5492944817787?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20los%20servicios%20RUWEN"
+                        target="_blank" class="btn btn-primary btn-large">Agendá una consultoría gratuita</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN 3: HOSPITALITY DIGITAL
+    ====================================================== -->
+        <section id="hospitalidad" class="section bg-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="eyebrow-label accent">Hospitalidad Digital</p>
+                    <h2 class="section-title text-white">Tu alojamiento merece<br>más que una comisión a booking</h2>
+                    <p class="section-subtitle" style="color:rgba(255,255,255,0.7);">Ofrecemos una propuesta integral
+                        pensada exclusivamente para alojamientos turísticos que quieren crecer con identidad propia.</p>
+                </div>
+
+                <!-- Grid de servicios hospitality -->
+                <div class="hospitality-grid">
+
+                    <div class="hosp-card">
+                        <div class="hosp-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <h4>Desarrollo Web Premium</h4>
+                        <p>Tu sitio propio, rápido y atractivo, adaptada a Tablet y Smartphone, diseñado para convertir
+                            visitantes en huéspedes. Incluye
+                            galería, mapa, descripción sensorial y llamadas a la acción estratégicas.</p>
+                    </div>
+
+                    <div class="hosp-card highlight">
+                        <div class="hosp-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" />
+                                <path d="M16 2v4M8 2v4M3 10h18" />
+                                <circle cx="12" cy="16" r="2" />
+                            </svg>
+                        </div>
+                        <h4>Motor de Reservas Propio</h4>
+                        <p>Posicionamos tu pagina para que dejes de pagar comisiones a Booking y Airbnb. Instalamos un
+                            motor de reservas en tu web para que tus huéspedes reserven directo con vos, sin
+                            intermediarios ni porcentajes. Vinculamos tu calendario de reservas con OTAs (Booking,
+                            Airbnb) para evitar el overbooking y automatizar tu gestión.</p>
+                    </div>
+
+                    <div class="hosp-card">
+                        <div class="hosp-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4" />
+                            </svg>
+                        </div>
+                        <h4>Growth Marketing & Performance Ads</h4>
+                        <p>No nos limitamos a atraer visitas; conectamos tu propuesta de valor con quienes realmente la
+                            están buscando. Analizamos datos, optimizamos embudos de conversión y diseñamos estrategias
+                            de contenido que aseguran un flujo constante de ventas y reservas, maximizando el
+                            crecimiento de tu negocio en cualquier temporada.</p>
+                    </div>
+
+                    <div class="hosp-card">
+                        <div class="hosp-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="15" cy="5" r="2" />
+                                <path d="M7.5 4H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-2.5" />
+                                <path d="M15 14l-4-7-3 5-2-3-4 5h18" />
+                            </svg>
+                        </div>
+                        <h4>Producción de Contenido</h4>
+                        <p>Fotografía, video y reels profesionales del alojamiento, entorno y experiencias. Contenido
+                            que enamora antes de la reserva y potencia el crecimiento orgánico sin pauta publicitaria.
+                        </p>
+                    </div>
+
+                    <div class="hosp-card">
+                        <div class="hosp-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <h4>Venta de Experiencias</h4>
+                        <p>Integramos tu alojamiento con una red de experiencias locales verificadas: aventura,
+                            gastronomía, naturaleza y bienestar. Ticket promedio más alto, huésped más satisfecho.</p>
+                    </div>
+
+                    <div class="hosp-card">
+                        <div class="hosp-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                            </svg>
+                        </div>
+                        <h4>Automatización & IA Concierge</h4>
+                        <p>Agente inteligente que responde consultas, envía confirmaciones y gestiona el check-in
+                            digital automáticamente, liberándote de la urgencia operativa.</p>
+                    </div>
+
+                </div><!-- /.hospitality-grid -->
+
+                <!-- Host CTA Block -->
+                <div class="host-cta-container">
+                    <h3 class="host-cta-title">¿NECESITÁS UN ANFITRIÓN LOCAL PARA TUS HUÉSPEDES?</h3>
+                    <p class="host-cta-location">Servicio exclusivo en San Martín de los Andes, Villa Lago Meliquina y
+                        Villa Río Hermoso.</p>
+                    <p class="host-cta-body">Contamos con formación técnica universitaria en gestión hotelera para
+                        profesionalizar la operación de tu alojamiento en la Patagonia. Nos encargamos de que cada
+                        detalle de la estadía sea perfecto, brindándote la tranquilidad de tener expertos a cargo de tu
+                        propiedad.</p>
+                    <a href="https://wa.me/5492944817787?text=Hola,%20me%20interesa%20el%20servicio%20de%20Anfitri%C3%B3n%20para%20mi%20alojamiento."
+                        target="_blank" class="btn btn-primary">QUIERO UN ANFITRIÓN
+                        PROFESIONAL</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN 4: PARTNERS — MELIQUINA NATURAL
+    ====================================================== -->
+        <section id="meliquina" class="section partners-section">
+            <div class="container">
+                <div class="partners-split">
+
+                    <!-- Lado A: Hospitalidad sensorial -->
+                    <div class="partners-col-a">
+                        <p class="eyebrow-label">Partners</p>
+                        <h2 class="section-title">Aromas Premium para transformar tus espacios</h2>
+                        <p>Los detalles aromaticos tambien forman parte de tu identidad de marca.<br>
+                            Por eso trabajamos con <strong>Meliquina Natural</strong>.</p>
+                        <p>Perfumes para ambientes y textiles elaborados con esencias puras y de la mas alta calidad,
+                            pensados para transformar cada espacio en una experiencia sensorial unica, elaborados en
+                            Meliquina, Patagonia Argntina.<br>
+                            Aromatizantes de ambiente y textil, difusores, velas de soja Aromaticas, repuesto de perfume
+                            por litro y jabon liquido perfumado.</p>
+                        <p class="partners-highlight">Más que un detalle, una conexión emocional. Hacé que la memoria de
+                            su viaje lleve tu firma y ofrecé un producto personalizado.</p>
+                        <a href="https://wa.me/5492944211906?text=Quiero%20Informacion%20de%20los%20amenities%20para%20alojamientos"
+                            target="_blank" class="btn btn-outline-dark">Cotizar amenities</a>
+                    </div>
+
+                    <!-- Lado B: Visual / tarjeta producto -->
+                    <div class="partners-col-b">
+                        <div class="meliquina-card">
+                            <div class="meliquina-badge">Partner exclusivo</div>
+                            <div class="meliquina-icon-row">
+                                <div class="mel-icon-item">
+                                    <img src="images/difusor-icon.webp" alt="Difusores" class="meliquina-custom-icon">
+                                    <span>Difusores</span>
+                                </div>
+                                <div class="mel-icon-item">
+                                    <img src="images/aromatizador-icon.webp" alt="Aromatizadores"
+                                        class="meliquina-custom-icon">
+                                    <span>Aromatizadores</span>
+                                </div>
+                                <div class="mel-icon-item">
+                                    <img src="images/jabon-liquido-icon.webp" alt="Jabones"
+                                        class="meliquina-custom-icon">
+                                    <span>Jabones</span>
+                                </div>
+                                <div class="mel-icon-item">
+                                    <img src="images/textil-icon.webp" alt="Textiles" class="meliquina-custom-icon">
+                                    <span>Textiles</span>
+                                </div>
+                            </div>
+                            <h3 class="meliquina-title">Meliquina Natural</h3>
+                            <p class="meliquina-desc">Aromas premium para marcas que busquen diferenciarse. Linea de
+                                aromas y velas aromaticas diseñada especialmente para complejos hoteleros que buscan
+                                transmitir calidez y distincion.</p>
+                            <div class="meliquina-tag-row">
+                                <span class="mel-tag">100% Natural</span>
+                                <span class="mel-tag">Patagonia</span>
+                                <span class="mel-tag">Etiqueta Blanca</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.partners-split -->
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN 5: MÁS ALLÁ DEL ALOJAMIENTO (Eventos)
+    ====================================================== -->
+        <section id="eventos" class="section bg-dark eventos-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="eyebrow-label accent">Experiencias gestionadas</p>
+                    <h2 class="section-title text-white">Llenamos tu calendario con reservas <br> cuando nadie más lo
+                        hace
+                    </h2>
+
+                    <p class="section-subtitle" style="color:rgba(255,255,255,0.7);">Diseñamos y ejecutamos experiencias
+                        grupales de alto valor para la red RUWEN. Vos ponés la locación, nosotros la estrategia y el
+                        público.</p>
+
+                    <div style="margin-top: 32px; margin-bottom: 24px;">
+                        <h3 class="text-white" style="font-size: 1.4rem; margin-bottom: 8px;">¿Tenés un complejo de
+                            cabañas?</h3>
+                        <p class="section-subtitle" style="color:rgba(255,255,255,0.9); font-weight: 500;">
+                            Sumá tu alojamiento y transformá tu disponibilidad en reservas de alto valor.
+                        </p>
+                    </div>
+
+                    <p
+                        style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0;">
+                        Servicio exclusivo en San Martín de los Andes, Villa Lago Meliquina y Villa Río Hermoso.
+                    </p>
+                </div>
+
+                <div class="eventos-grid">
+
+                    <div class="evento-card">
+                        <div class="evento-card-num">01</div>
+                        <div class="evento-card-icon">
+                            <svg viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16">
+                                <circle cx="164" cy="52" r="20" />
+                                <path
+                                    d="M28.44,177.67,185.88,223.3A17.25,17.25,0,0,0,208,206.82h0a17.19,17.19,0,0,0-12.44-16.49L38.12,144.7A17.25,17.25,0,0,0,16,161.18h0A17.19,17.19,0,0,0,28.44,177.67Z" />
+                                <line x1="80" y1="80" x2="216" y2="120" />
+                                <line x1="131.28" y1="95.08" x2="88.47" y2="159.29" />
+                                <polyline points="114.18 120.73 160 134 134.15 172.53" />
+                            </svg>
+                        </div>
+                        <h4>Adventure Trips</h4>
+                        <p>Kite, snow, trekking y deportes de montaña. Coordinamos guías, instructores, traslados y
+                            gastronomía para grupos que buscan adrenalina en la Patagonia.</p>
+                        <p class="evento-detail">Ideal para temporadas de nieve y verano. Ocupación garantizada en
+                            bloque.</p>
+                    </div>
+
+                    <div class="evento-card">
+                        <div class="evento-card-num">02</div>
+                        <div class="evento-card-icon">
+                            <svg viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16">
+                                <path
+                                    d="M128,200s40-22,40-80.82c0-46-24.55-69.54-35.19-77.56a8,8,0,0,0-9.62,0C112.55,49.64,88,73.14,88,119.18,88,178,128,200,128,200Z" />
+                                <path
+                                    d="M94.6,80.8C81.28,70,68.56,65.79,61,64.18a8.2,8.2,0,0,0-9.52,5.52c-3.88,12-8.78,39.66,11.11,74.27s53.07,53.4,65.37,56" />
+                                <path
+                                    d="M52.56,121.4a69.59,69.59,0,0,0-30.82.64,7.94,7.94,0,0,0-5.46,9.78c3,11.2,12.49,33.07,41.72,50.54S112.63,200,128,200" />
+                            </svg>
+                        </div>
+                        <h4>Wellness & Retiros</h4>
+                        <p>Retiros de yoga, meditación, bienestar corporativo y reconexión. Armamos el programa
+                            completo: facilitadores, alimentación, actividades y experiencias de entorno.</p>
+                        <p class="evento-detail">Perfecto para temporada baja. Ticket promedio elevado con ocupación
+                            total.</p>
+                    </div>
+
+                    <div class="evento-card">
+                        <div class="evento-card-num">03</div>
+                        <div class="evento-card-icon">
+                            <svg viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16">
+                                <path d="M80,120l32,32,84-84" />
+                                <circle cx="128" cy="128" r="96" />
+                            </svg>
+                        </div>
+                        <h4>Gestión Integral de Alianzas</h4>
+                        <p>Formás parte de la red RUWEN y accedés a una logística de grupos armada, negociada y
+                            ejecutada por nosotros. Solo necesitás tu espacio; el resto lo manejamos.</p>
+                        <p class="evento-detail">Cuanto más grande la red, mejores condiciones para todos los aliados.
+                        </p>
+                    </div>
+
+                </div><!-- /.eventos-grid -->
+
+                <div class="section-cta text-center" style="margin-top:60px;">
+                    <a href="https://wa.me/5492944817787?text=Quiero%20que%20mi%20alojamiento%20forme%20parte%20de%20la%20red%20RUWEN"
+                        target="_blank" class="btn btn-primary btn-large">Sumar mi alojamiento a la red</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN 6: ALIANZAS ESTRATÉGICAS
+    ====================================================== -->
+        <section id="alianzas" class="section alianzas-section">
+            <div class="container">
+                <div class="alianzas-inner">
+                    <div class="alianzas-text">
+                        <p class="eyebrow-label">Networking</p>
+                        <h2 class="section-title">Alianzas Estratégicas:<br>Crezcamos Juntos.</h2>
+                        <p>Si tenés habilidades digitales excepcionales, sos propietario o administrador de un
+                            alojamiento turístico, o tu marca ofrece productos o servicios que eleven la experiencia en
+                            hospitalidad, hay un lugar para vos en nuestra red.</p>
+                        <p>En RUWEN creemos que la colaboración estratégica multiplica los resultados. Buscamos partners
+                            que compartan visión, calidad y ganas de crecer de forma sostenida.</p>
+                        <div class="alianzas-tags">
+                            <span class="alianza-tag">Desarrolladores / Diseñadores</span>
+                            <span class="alianza-tag">Propietarios de alojamientos</span>
+                            <span class="alianza-tag">Fotógrafos / Videógrafos</span>
+                            <span class="alianza-tag">Guías y operadores turísticos</span>
+                            <span class="alianza-tag">Marcas de productos premium</span>
+                            <span class="alianza-tag">Traslados</span>
+                        </div>
+                        <div class="alianzas-btns">
+                            <a href="https://wa.me/5492944817787?text=Quiero%20proponer%20una%20alianza%20con%20RUWEN"
+                                target="_blank" class="btn btn-primary">Proponer una alianza</a>
+                            <a href="https://wa.me/5492944817787" target="_blank" class="btn btn-outline-dark">Hablemos
+                                primero</a>
+                        </div>
+                    </div>
+                    <div class="alianzas-visual">
+                        <img src="images/Alianzas estrategicas networking.webp" alt="Alianzas Estratégicas Networking"
+                            class="alianzas-networking-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN 7: ADN LOCAL — QUIÉNES SOMOS
+    ====================================================== -->
+        <section id="nosotros" class="section bg-dark nosotros-section">
+            <div class="container">
+                <div class="nosotros-inner">
+                    <div class="nosotros-col-a">
+                        <p class="eyebrow-label accent">Quiénes somos</p>
+                        <h2 class="section-title text-white">RUWEN.<br>Desde la Patagonia,<br>para el mundo.</h2>
+                    </div>
+                    <div class="nosotros-col-b">
+                        <p>Operamos desde <strong>Villa Lago Meliquina, Neuquén, Argentina</strong>. Un equipo
+                            multidisciplinario que combina la calma del entorno patagónico con la velocidad de la
+                            innovación tecnológica.</p>
+                        <p>No somos una agencia más. Somos especialistas en soluciones digitales con experiencia
+                            real en turismo, hospitalidad y e-commerce. Conocemos el mercado, las herramientas y los
+                            atajos que funcionan.</p>
+                        <p>Trabajamos de forma remota con clientes en toda Argentina y en proyectos globales en español.
+                        </p>
+                        <div class="nosotros-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">+50</span>
+                                <span class="stat-label">Proyectos ejecutados</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">24/7</span>
+                                <span class="stat-label">Automatización activa</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Resultados medibles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN 8: TECH STACK (última sección)
+    ====================================================== -->
+        <section id="tech-stack" class="section tech-stack-section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="eyebrow-label tech-eyebrow">Tech Stack</p>
+                    <h2 class="section-title">Tecnologías que utilizamos</h2>
+                    <p class="section-subtitle">Las herramientas que dominamos para construir, automatizar y escalar tu
+                        negocio digital.</p>
+                </div>
+            </div>
+            <!-- Ticker fuera del container para full-width -->
+            <div class="tech-ticker-wrapper">
+                <div class="tech-ticker-track">
+                    <!-- Primera pasada -->
+                    <div class="tech-logo-item"><img src="tech stack icons/css3-logo.webp" alt="CSS3"><span>CSS3</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/docker-logo.webp"
+                            alt="docker"><span>docker</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/firebase-logo.webp"
+                            alt="Firebase"><span>Firebase</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/google-ads-logo.webp"
+                            alt="Google Ads"><span>Google Ads</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/html5-logo.webp"
+                            alt="HTML5"><span>HTML5</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/javascript-logo.webp"
+                            alt="JavaScript"><span>JavaScript</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/lovable-logo.webp"
+                            alt="Lovable"><span>Lovable</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/make-logo.webp" alt="make"><span>make</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/meta-business-suite-logo.webp"
+                            alt="Meta Business Suite"><span>Meta Business Suite</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/n8n-logo.webp" alt="n8n"><span>n8n</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/notion-logo.webp"
+                            alt="Notion"><span>Notion</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/php-logo.webp" alt="php"><span>php</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/python-logo.webp"
+                            alt="python"><span>python</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/sql-logo.webp" alt="SQL"><span>SQL</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/zapier-logo.webp"
+                            alt="zapier"><span>zapier</span></div>
+                    <!-- Segunda pasada (copia para loop infinito) -->
+                    <div class="tech-logo-item"><img src="tech stack icons/css3-logo.webp" alt="CSS3"><span>CSS3</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/docker-logo.webp"
+                            alt="docker"><span>docker</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/firebase-logo.webp"
+                            alt="Firebase"><span>Firebase</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/google-ads-logo.webp"
+                            alt="Google Ads"><span>Google Ads</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/html5-logo.webp"
+                            alt="HTML5"><span>HTML5</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/javascript-logo.webp"
+                            alt="JavaScript"><span>JavaScript</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/lovable-logo.webp"
+                            alt="Lovable"><span>Lovable</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/make-logo.webp" alt="make"><span>make</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/meta-business-suite-logo.webp"
+                            alt="Meta Business Suite"><span>Meta Business Suite</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/n8n-logo.webp" alt="n8n"><span>n8n</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/notion-logo.webp"
+                            alt="Notion"><span>Notion</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/php-logo.webp" alt="php"><span>php</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/python-logo.webp"
+                            alt="python"><span>python</span></div>
+                    <div class="tech-logo-item"><img src="tech stack icons/sql-logo.webp" alt="SQL"><span>SQL</span>
+                    </div>
+                    <div class="tech-logo-item"><img src="tech stack icons/zapier-logo.webp"
+                            alt="zapier"><span>zapier</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+         SECCIÓN: INSTAGRAM — AGENCIA RUWEN
+    ====================================================== -->
+        <section id="instagram" class="section ig-section bg-dark">
+            <div class="container">
+                <div class="ig-inner">
+
+                    <!-- Texto -->
+                    <div class="ig-text">
+                        <p class="eyebrow-label accent">Seguinos</p>
+                        <h2 class="section-title text-white">AGENCIA RUWEN<br>EN INSTAGRAM.</h2>
+                        <p class="ig-body">Sumate a nuestra comunidad digital para vivir la experiencia RUWEN en tiempo
+                            real. En este espacio no solo mostramos nuestro portfolio cinematográfico y la calidad de
+                            nuestras producciones de alta montaña. Compartimos insights estratégicos sobre hospitalidad
+                            local, tips de growth marketing y automatización, y casos de éxito de reservas directas que
+                            están transformando alojamientos en la región.</p>
+                        <p class="ig-body">Queremos que este canal sea una herramienta útil para tu emprendimiento.</p>
+                        <p class="ig-body">Además, es el medio oficial donde lanzamos búsquedas activas para nuestra red
+                            de afiliados (guías, prestadores y talentos locales). Queremos que seas parte del puente que
+                            conecta el talento local con las oportunidades globales.</p>
+                        <p class="ig-body"><strong>No te pierdas de nada. Seguinos en <a
+                                    href="https://www.instagram.com/ruwen.digital" target="_blank"
+                                    class="ig-handle">@ruwen.digital</a> y potenciá tu visión.</strong><br>🧉🏔️</p>
+                        <a href="https://www.instagram.com/ruwen.digital" target="_blank"
+                            class="btn btn-primary ig-cta">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="vertical-align:middle;margin-right:8px;">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            Seguir en Instagram
+                        </a>
+                    </div>
+
+                    <!-- Embed Instagram -->
+                    <div class="ig-embed-wrap">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/p/DWLKUxSDm4E/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14"
+                            style="background:#FFF;border:0;border-radius:12px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:99.375%;width:calc(100% - 2px);">
+                            <div style="padding:16px;"><a
+                                    href="https://www.instagram.com/p/DWLKUxSDm4E/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style="background:#FFFFFF;line-height:0;padding:0;text-align:center;text-decoration:none;width:100%;"
+                                    target="_blank">
+                                    <div style="display:flex;flex-direction:row;align-items:center;">
+                                        <div
+                                            style="background-color:#F4F4F4;border-radius:50%;flex-grow:0;height:40px;margin-right:14px;width:40px;">
+                                        </div>
+                                        <div
+                                            style="display:flex;flex-direction:column;flex-grow:1;justify-content:center;">
+                                            <div
+                                                style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:100px;">
+                                            </div>
+                                            <div
+                                                style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;width:60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding:19% 0;"></div>
+                                    <div style="display:block;height:50px;margin:0 auto 12px;width:50px;"><svg
+                                            width="50px" height="50px" viewBox="0 0 60 60"
+                                            xmlns="https://www.w3.org/2000/svg">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511,−20)" fill="#000000">
+                                                    <path
+                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg></div>
+                                    <div style="padding-top:8px;">
+                                        <div
+                                            style="color:#3897f0;font-family:Arial,sans-serif;font-size:14px;font-weight:550;line-height:18px;">
+                                            Ver esta publicación en Instagram</div>
+                                    </div>
+                                    <div style="padding:12.5% 0;"></div>
+                                    <div
+                                        style="display:flex;flex-direction:column;flex-grow:1;justify-content:center;margin-bottom:24px;">
+                                        <div
+                                            style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:224px;">
+                                        </div>
+                                        <div
+                                            style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;width:144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin-bottom:0;margin-top:8px;overflow:hidden;padding:8px 0 7px;text-align:center;text-overflow:ellipsis;white-space:nowrap;">
+                                    <a href="https://www.instagram.com/p/DWLKUxSDm4E/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:normal;line-height:17px;text-decoration:none;"
+                                        target="_blank">Una publicación compartida de RUWEN (@ruwen.digital)</a>
+                                </p>
+                            </div>
+                        </blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+       FOOTER / CTA
+  ====================================================== -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-cta">
+                <img src="images/LOGO CONTRASTE sin fondo.png" alt="RUWEN" class="footer-logo-img">
+                <h2 class="footer-cta-title">¿Listo para<br>transformar tu negocio?</h2>
+                <p class="footer-cta-subtitle">Agendá una consultoría gratuita y descubrí todo el potencial digital de
+                    tu marca.</p>
+                <a href="https://wa.me/5492944817787?text=Hola%2C%20quiero%20agendar%20una%20consultor%C3%ADa%20gratuita"
+                    target="_blank" class="btn btn-primary btn-large cta-pulse">
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                        style="vertical-align:middle;margin-right:8px;">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                    </svg>
+                    Agendar consultoría por WhatsApp
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-copyright">&copy; 2026 RUWEN. Todos los derechos reservados.</p>
+                    <p class="footer-location">Villa Lago Meliquina, Neuquén, Argentina.</p>
+                </div>
+                <div class="footer-seal">
+                    <span>Ruwen Agency — Patagonia Argentina</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5492944817787?text=Hola%20me%20gustaría%20saber%20más" class="whatsapp-float" target="_blank"
+        rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9" />
+            <path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
